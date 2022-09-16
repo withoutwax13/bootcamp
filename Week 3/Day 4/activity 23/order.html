@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Order</title>
+    <style>
+        .logo {
+            max-height: 50px;
+        }
+        .nav-link:hover {
+            color: mediumseagreen !important;
+        }
+        .footer-logo {
+                height: 30px;
+                width: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="https://cdn-icons-png.flaticon.com/512/161/161588.png" alt="brand-logo" class="img-responsive logo">
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="home.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="order.html">Order</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="registration.html">Register</a>
+                  </li>
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control" type="search" placeholder="Search" />
+                  <button class="btn btn-outline-success" type="submit">
+                    Search
+                  </button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container pt-3">
+        <h1>Danny's Foods</h1>
+    </div>
+    <div class="container pt-4">
+        <table class="table table-bordered table-responsive table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th scope="col" class="text-center">Icons</th>
+                    <th scope="col" class="text-center">Item Name</th>
+                    <th scope="col" class="text-center">Price</th>
+                </tr>
+            </thead>
+            <tr>
+                <th colspan="3" class="text-center table-active">Meals</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5787/5787016.png" alt="Burger" class="img-responsive logo">
+                </td>
+                <td>Burger</td>
+                <td>55 PHP</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/837/837606.png" alt="Chicken" class="img-responsive logo">
+                </td>
+                <td>Fried Chicken</td>
+                <td>80 PHP</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/5787/5787180.png" alt="Spaghetti" class="img-responsive logo">
+                </td>
+                <td>Spaghetti</td>
+                <td>55 PHP</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://cdn-icons-png.flaticon.com/512/2094/2094661.png" alt="Pizza" class="img-responsive logo">
+                </td>
+                <td>Pizza</td>
+                <td>150 PHP</td>
+            </tr>
+            <tr>
+                <th colspan="3" class="text-center table-active">Drinks</th>
+            </tr>
+            <tr>
+                <td>
+                    <img src="data:image/png;base64,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" alt="Coke" class="img-responsive logo">
+                </td>
+                <td>Coke</td>
+                <td>20 PHP</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT30495zcZuPCb_YKpDxEP2gXUuUP1pkymcJA&usqp=CAU" alt="Sprite" class="img-responsive logo">
+                </td>
+                <td>Sprite</td>
+                <td>20 PHP</td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="https://ih1.redbubble.net/image.2162681789.2674/st,small,507x507-pad,600x600,f8f8f8.jpg" alt="Sarsi" class="img-responsive logo">
+                </td>
+                <td>Sarsi</td>
+                <td>20 PHP</td>
+            </tr>
+            <tr>
+                <th rowspan="2" colspan="2" class="text-center table-dark">All items are subject to tax. No refunds. All items are not transferrable.</th>
+                <td>
+                    Extra Rice - 20 PHP
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Condiments - 20 PHP
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div class="container pt-5">
+        <p class="text-center">
+            johnpatrickyusoresvalera@gmail.com | 09123456789
+        </p>
+    </div>
+    <div class="container text-center pb-3">
+        <a href="https://www.facebook.com/patrick.valera.71/">
+            <img class="img-fluid footer-logo" src="https://cdn1.iconfinder.com/data/icons/social-media-2285/512/Colored_Facebook3_svg-128.png" alt="fb-logo">
+        </a>
+        <a href="https://twitter.com/patrickvalz">
+            <img class="img-fluid footer-logo" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Twitter_colored_svg-128.png" alt="twt-logo">
+        </a>
+        <a href="https://www.instagram.com/_jpv_kkura/">
+            <img class="img-fluid footer-logo" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Instagram_colored_svg_1-128.png" alt="ig-logo">
+        </a>
+        <a href="https://www.pinterest.ph/">
+            <img class="img-fluid footer-logo" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Pinterest_colored_svg-128.png" alt="pinterest-logo">
+        </a>
+        <a href="https://www.linkedin.com/in/johnpatrickvalera/">
+            <img class="img-fluid footer-logo" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Linkedin_unofficial_colored_svg-128.png" alt="linkedin-logo">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img class="img-fluid footer-logo" src="https://cdn2.iconfinder.com/data/icons/social-media-2285/512/1_Youtube_colored_svg-128.png" alt="yt-logo">
+        </a>
+    </div>
+</body>
+</html>

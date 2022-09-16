@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>ISCP Employee Registration Form</title>
+    </head>
+    <body>
+        <div>
+            <h1>ISCP Employee Registration Form</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/en/c/c9/Seal_of_the_International_State_College_of_the_Philippines.png" style="width: 100px; height: 100px;"/>
+        </div>
+        <div>
+            <form>
+                <div>
+                    <label>First name</label>
+                    <input type="text" name="first_name" placeholder="Juan"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Last name</label>
+                    <input type="text" name="last_name" placeholder="Dela Cruz"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <input type="password" name="password"/>
+                    <br>
+                </div>
+                <div>
+                    <label>SSS ID</label>
+                    <input type="number" name="sss_id" placeholder="XXXXXXXXXX"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Philhealth ID</label>
+                    <input type="number" name="philhealth_id" placeholder="XXXXXXXXXX"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Place of Birth</label>
+                    <input type="text" name="birthplace" placeholder="Quezon City" />
+                    <br>
+                </div>
+                <div>
+                    <label>Birthdate</label>
+                    <input type="date" name="birthdate"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="email" name="email" placeholder="juandelacruz@example.com"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Barangay</label>
+                    <input type="text" name="barangay" placeholder="Sagrada"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Town/City</label>
+                    <input type="text" name="town/city" placeholder="Bacoor"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Province</label>
+                    <input type="text" name="province" placeholder="Cavite"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Full Address</label>
+                    <input type="text" name="complete_address" placeholder="122 Parro St., Sagrada, Bacoor, Cavite"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Contact Number (Mobile)</label>
+                    <input type="number" name="mobile_number" placeholder="09123456789"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Contact Number (Tel)</label>
+                    <input type="tel" name="tel_number" placeholder="5695265897"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Civil Status</label>
+                    <input type="radio" name="civil_status" value="single" id="single"/><label for="single">Single</label>
+                    <input type="radio" name="civil_status" value="married" id="married"/><label for="married">Married</label>
+                    <input type="radio" name="civil_status" value="widowed" id="widowed"/><label for="widowed">Widowed</label>
+                    <input type="radio" name="civil_status" value="separated" id="separated"/><label for="separated">Separated</label>
+                    <br>
+                </div>
+                <div>
+                    <label>Gender</label>
+                    <select name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="otehr">Other</option>
+                    </select>
+                    <br>
+                </div>
+                <div>
+                    <label>Upload image for profile</label>
+                    <input type="file" name="profile_upload" accept="image/*"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Upload 2x2 picture</label>
+                    <input type="file" name="2x2_upload" accept="image/*"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Upload picture of government ID</label>
+                    <input type="file" name="govid_upload" accept="image/*"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Mother's Maiden Name</label>
+                    <input type="text" name="mother_maiden_name" placeholder="Santos"/>
+                    <br>
+                </div>
+               <div>
+                    <label>Father's Name</label>
+                    <input type="text" name="father_name" placeholder="Juanito Dela Cruz"/>
+                    <br>
+               </div>
+                <div>
+                    <label>Date Registered</label>
+                    <input type="date" name="date_registered"/>
+                    <br>
+                </div>
+                <div>
+                    <label>Have you experienced any of the following in the last 30 days?</label>
+                    <br>
+                    <input type="checkbox" name="coughing" id="coughing"/><label for="coughing">Coughing</label>
+                    <input type="checkbox" name="fever" id="fever"/><label for="fever">Fever</label>
+                    <input type="checkbox" name="headache" id="headache/><label for="headache">Headache</label>
+                    <input type="checkbox" name="common_cold" id="common_cold"/><label for="common_cold">Common cold</label>
+                    <input type="checkbox" name="body_ache" id="body_ache"/><label for="body_ache">Body ache</label>
+                    <input type="checkbox" name="sore_throat" id="sore_throat"/><label for="sore_throat">Sore throat</label>
+                    <input type="checkbox" name="tiredness" id="tiredness"/><label for="tiredness">Tiredness</label>
+                    <input type="checkbox" name="loss_smell" id="loss_smell"/><label for="loss_smell">Loss of smell</label>
+                </div>
+                <div>
+                    <label>Give a short description about yourself</label>
+                    <br>
+                    <textarea name="description" cols="50" rows="4" placeholder="I am ..."></textarea>
+                </div>
+                <div>
+                    <input type="submit" name="submit"/>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>

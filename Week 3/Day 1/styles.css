@@ -1,0 +1,121 @@
+html {
+    font-family: Tahoma !important;
+}
+body {
+    margin: 0;
+    background: url("https://thumbs.dreamstime.com/b/grainy-white-paper-surface-as-texture-background-close-up-macro-200678301.jpg");
+
+}
+header{
+    background-color: blue;
+    padding-top: 10px; padding-bottom: 10px; text-align: center;
+}
+header ul {
+    list-style: none;
+}
+header ul a {
+    padding-left: 3%; padding-right: 3%;
+    color: white;
+    text-decoration: none;
+}
+header ul li {
+    display: inline;
+}
+header ul a:hover{
+    color: darkblue;
+}
+
+footer{
+    font-size: 60%;
+    text-align: center; margin: auto 30%; color: gray
+}
+footer nav a {
+    color: gray; text-decoration: none;
+}
+
+main {
+    text-align: center;
+}
+
+#branding h1 {
+    color: blue;
+}
+
+#branding .branding-content {
+    font-weight: bold;
+}
+
+#center-content-container {
+    display: flex; flex-direction: row; margin: 0 auto; width: 50%;
+}
+
+#center-content-container img{
+    height: 300px; width: 400px; 
+    margin-left: auto;
+    margin-right: 0;
+}
+
+#center-content-container h2 {
+    color: blue;
+}
+
+#clicksave {
+    color: blue; 
+    font-size: 150%;
+}
+#clicksave:visited{
+    color: orange;
+    font-size: 150%;
+}
+#clicksave:hover{
+    color:magenta;
+    font-size: 150%;
+}
+#clicksave:active{
+    color: lime;
+    font-size: 150%;
+}
+
+#center-content-container div{
+    text-align: left; margin-left: 20px; margin-right: auto;
+}
+
+#misc-content {
+    display: flex; flex-direction: row; margin: 0 auto; width: 50%;
+}
+
+#misc-content table{
+    text-align: center;
+    border-collapse: collapse;
+}
+#misc-content table,td {
+    border: 1px solid;
+    border-style: dotted;
+}
+#misc-content td:hover{
+    color: orange;
+}
+#misc-content tr:nth-child(odd) {
+    background-color: #b4c7da;
+}
+
+#misc-content img {
+    height: 100px; width: 100px; margin: auto;
+}
+
+.cross {
+    height: 100px; width: 100px; margin: auto;
+}
+
+#gallery {
+    display: flex; flex-direction: row; width: 80%;
+    margin: 50px auto;
+}
+
+.gallery-img{
+    margin: 30px auto;
+}
+
+.gallery-img img {
+    width: 80%;
+}

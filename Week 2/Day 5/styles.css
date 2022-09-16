@@ -1,0 +1,70 @@
+html {
+    font-family: "Comic Sans MS", "Comic Sans", cursive !important;
+}
+body {
+    margin: 0;
+}
+header{
+    background-color: blue;
+    padding-top: 10px; padding-bottom: 10px; text-align: center;
+}
+header nav a {
+    padding-left: 3%; padding-right: 3%;
+    color: white;
+    text-decoration: none;
+}
+
+footer{
+    font-size: 60%;
+    text-align: center; margin: auto 30%; color: gray
+}
+footer nav a {
+    color: gray; text-decoration: none;
+}
+
+main {
+    text-align: center;
+}
+
+#branding h1 {
+    color: blue;
+}
+
+#branding .branding-content {
+    font-weight: bold;
+}
+
+#center-content-container {
+    display: flex; flex-direction: row; margin: 0 auto; width: 50%;
+}
+
+#center-content-container img{
+    height: 300px; width: 400px;
+}
+
+#center-content-container h2 {
+    color: blue;
+}
+#clicksave {
+    color: magenta; font-size: 150%
+}
+
+#center-content-container div{
+    text-align: left; margin-left: 20px;
+}
+
+#misc-content {
+    display: flex; flex-direction: row; margin: 0 auto; width: 50%;
+}
+
+#misc-content ul{
+    text-align: center; list-style-position: inside;
+}
+
+#misc-content img {
+    height: 100px; width: 100px; margin: auto;
+}
+
+.cross {
+    height: 100px; width: 100px; margin: auto;
+}
